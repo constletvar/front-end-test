@@ -5,18 +5,21 @@ import { Routes, Route } from 'react-router-dom';
 import { Home } from './pages/home';
 import { Header } from './components/Header';
 import { NoMatch } from './pages/NoMatch';
+import { MinicartProvider } from 'contexts/MinicartContext';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <GlobalStyle />
+      <MinicartProvider>
+        <GlobalStyle />
 
-      <Header /> 
+        <Header /> 
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<NoMatch />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<NoMatch />} />
+        </Routes>
+      </MinicartProvider>
     </ThemeProvider>
   );
 }

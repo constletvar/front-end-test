@@ -13,7 +13,7 @@ export const Container = styled.header`
   padding: 16px 20px 23px;
 
   @media screen and (max-width: ${({ theme }) => theme.sizes.mobile}) {
-    padding: 0 20px 23px;
+    padding: 0 20px 11px;
   }
 `;
 

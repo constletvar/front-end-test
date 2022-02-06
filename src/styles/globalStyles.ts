@@ -87,6 +87,21 @@ export const GlobalStyle = createGlobalStyle`
         url('/fonts/nunito/nunito-v22-latin-900.svg#Nunito') format('svg'); /* Legacy iOS */
   }
 
+  /* ubuntu-500 - latin */
+  @font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/ubuntu/ubuntu-v19-latin-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('/fonts/ubuntu/ubuntu-v19-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/fonts/ubuntu/ubuntu-v19-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/fonts/ubuntu/ubuntu-v19-latin-500.woff') format('woff'), /* Modern Browsers */
+        url('/fonts/ubuntu/ubuntu-v19-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('/fonts/ubuntu/ubuntu-v19-latin-500.svg#Ubuntu') format('svg'); /* Legacy iOS */
+  }
+
+
 
   body {
     margin: 0;
@@ -111,6 +126,22 @@ export const GlobalStyle = createGlobalStyle`
 
   * {
     box-sizing: border-box;
+  }
+
+  .swiper-pagination-bullet {
+    background: ${({ theme }) => theme.background.bullets};
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+
+    @media screen and (max-width: ${({ theme }) => theme.sizes.mobile}) {
+      width: 7px;
+      height: 7px;
+    }
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: ${({ theme }) => theme.background.bullets_active};
   }
 
 `;

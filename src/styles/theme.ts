@@ -6,22 +6,36 @@ const theme = {
 
     tertiary: '#333333',
 
+    shelf_promotion_text: '#FFFFFF',
+    shelf_button_text: '#FFFFFF',
+
+    minicart_quantity_text: '#FFFFFF'
+
   },
 
   background: {
     primary: '#FFFFFF',
     secondary: '#F2F2F2',
     tertiary: '#000000',
+
+    bullets: '#BDBDBD',
+    bullets_active: '#F8475F',
+
+    minicart_quantity: '#F8475F',
+
+    product_hover: '#E6E8EA'
   },
 
   fonts: {
     primary: 'Nunito, sans-serif',
-    secondary: 'Lato, sans-serif'
+    secondary: 'Lato, sans-serif',
+    tertiary: 'Ubuntu, sans-serif'
   },
 
   sizes: {
     max_width: '1240px',
-    mobile: '1024px'
+    mobile: '1024px',
+    shelf_product_mobile: '480px'
   }
 }
 
