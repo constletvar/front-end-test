@@ -7,9 +7,11 @@ const theme = {
     tertiary: '#333333',
 
     shelf_promotion_text: '#FFFFFF',
-    shelf_button_text: '#FFFFFF',
+    button_text: '#FFFFFF',
 
-    minicart_quantity_text: '#FFFFFF'
+    minicart_quantity_text: '#FFFFFF',
+
+    attention: '#D7182A'
 
   },
 
@@ -18,12 +20,18 @@ const theme = {
     secondary: '#F2F2F2',
     tertiary: '#000000',
 
+    button_hover: '#333333',
+
     bullets: '#BDBDBD',
     bullets_active: '#F8475F',
 
     minicart_quantity: '#F8475F',
 
-    product_hover: '#E6E8EA'
+    product_hover: '#E6E8EA',
+
+    title_after_line: '#C0C0C0',
+
+    text_input_background: '#FFFFFF'
   },
 
   fonts: {
@@ -35,7 +43,8 @@ const theme = {
   sizes: {
     max_width: '1240px',
     mobile: '1024px',
-    shelf_product_mobile: '480px'
+    shelf_product_mobile: '480px',
+    tablet: '768px'
   }
 }
 

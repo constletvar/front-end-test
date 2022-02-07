@@ -1,9 +1,42 @@
 import styled from "styled-components";
 import { Swiper } from "swiper/react";
 
-export const SwiperContainer = styled(Swiper)`
+export const Container = styled.div`
   max-width: ${({ theme }) => theme.sizes.max_width};
+  flex-direction: column;
+  margin: 0 auto;
 
+  @media screen and (max-width: ${({ theme }) => theme.sizes.mobile}) {
+    margin: 16px auto 0;
+  }
+`;
+
+export const Title = styled.h2`
+  position: relative;
+  font-family: ${({ theme }) => theme.fonts.primary};
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 27px;
+
+  @media screen and (max-width: ${({ theme }) => theme.sizes.mobile}) {
+    margin-left: 20px;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 65px;
+    background: ${({ theme }) => theme.background.title_after_line};
+
+    @media screen and (max-width: ${({ theme }) => theme.sizes.mobile}) {
+      width: 33px;
+    }
+  }
+`;
+
+export const SwiperContainer = styled(Swiper)`
+  
   .swiper-pagination {
     display: none;
 

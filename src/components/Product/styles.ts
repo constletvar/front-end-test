@@ -165,7 +165,7 @@ export const BuyButtonText = styled.span`
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-  color: ${({ theme }) => theme.colors.shelf_button_text};
+  color: ${({ theme }) => theme.colors.button_text};
   text-transform: uppercase;
 
   @media screen and (max-width: ${({ theme }) => theme.sizes.shelf_product_mobile}) {

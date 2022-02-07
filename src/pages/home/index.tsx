@@ -1,3 +1,4 @@
+import { Newsletter } from "components/Newsletter";
 import { ProductSlider } from "components/ProductSlider";
 import { useEffect, useState } from "react";
 import { api } from "services/api";
@@ -71,9 +72,14 @@ export const Home = () => {
         !!products.length && (
           <ProductSlider
             products={products}
+            title="Mais Vendidos"
           />
         )
       }
+
+      <Newsletter
+        title="Participe de nossas news com promoções e novidades!"
+      />
     </>
   );
 };
