@@ -4,7 +4,7 @@ interface ErrorProps {
   error: boolean;
 }
 
-export const Container = styled.div`
+export const Container = styled.article`
   background: ${({ theme }) => theme.background.secondary};
   height: 146px;
   display: flex;

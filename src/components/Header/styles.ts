@@ -44,6 +44,14 @@ export const MenuButton = styled(MobileMenuButton)`
   align-items: flex-end;
 `;
 
+export const LogoHeading = styled.h1`
+
+`;
+
+export const LogoHeadingText = styled.span`
+  font-size: 0;
+`;
+
 export const LogoLink = styled(Link)`
   @media screen and (max-width: ${({ theme }) => theme.sizes.mobile}) {
     grid-area: logo;

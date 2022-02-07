@@ -35,7 +35,7 @@ export const AddressContainer = styled.section`
   }
 `;
 
-export const AddressTitle = styled.h3`
+export const AddressTitle = styled.h2`
   font-family: ${({ theme }) => theme.fonts.primary};
   font-weight: 700;
   font-size: 20px;

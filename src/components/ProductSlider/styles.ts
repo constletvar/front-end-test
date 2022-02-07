@@ -3,6 +3,7 @@ import { Swiper } from "swiper/react";
 
 export const Container = styled.div`
   padding: 0 7px;
+  margin-top: 25px;
   @media screen and (max-width: ${({ theme }) => theme.sizes.mobile}) {
     margin: 16px auto 0;
   }

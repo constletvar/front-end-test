@@ -6,7 +6,9 @@ import {
   LogoLinkIcon,
   Search,
   MyAccountButton,
-  Minicart
+  Minicart,
+  LogoHeading,
+  LogoHeadingText
 } from "./styles"
 
 export const Header = () => {
@@ -14,9 +16,12 @@ export const Header = () => {
     <Container>
       <CenterContainer>
         <MenuButton />
-        <LogoLink to="/">
-          <LogoLinkIcon />
-        </LogoLink>
+        <LogoHeading>
+          <LogoLink to="/">
+            <LogoHeadingText>Corebiz</LogoHeadingText>
+            <LogoLinkIcon />
+          </LogoLink>
+        </LogoHeading>
         <Search />
         <MyAccountButton />
         <Minicart />
