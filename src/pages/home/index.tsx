@@ -1,3 +1,4 @@
+import { Footer } from "components/Footer";
 import { Newsletter } from "components/Newsletter";
 import { ProductSlider } from "components/ProductSlider";
 import { useEffect, useState } from "react";
@@ -80,6 +81,8 @@ export const Home = () => {
       <Newsletter
         title="Participe de nossas news com promoções e novidades!"
       />
+
+      <Footer />
     </>
   );
 };

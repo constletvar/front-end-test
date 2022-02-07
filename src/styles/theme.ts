@@ -11,7 +11,9 @@ const theme = {
 
     minicart_quantity_text: '#FFFFFF',
 
-    attention: '#D7182A'
+    attention: '#D7182A',
+
+    footer_text_color: '#FFFFFF'
 
   },
 
@@ -30,6 +32,8 @@ const theme = {
     product_hover: '#E6E8EA',
 
     title_after_line: '#C0C0C0',
+
+    footer_border: '#C0C0C0',
 
     text_input_background: '#FFFFFF'
   },
