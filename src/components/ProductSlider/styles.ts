@@ -2,13 +2,16 @@ import styled from "styled-components";
 import { Swiper } from "swiper/react";
 
 export const Container = styled.div`
-  max-width: ${({ theme }) => theme.sizes.max_width};
-  flex-direction: column;
-  margin: 0 auto;
-
+  padding: 0 7px;
   @media screen and (max-width: ${({ theme }) => theme.sizes.mobile}) {
     margin: 16px auto 0;
   }
+`;
+
+export const CenterContainer = styled.div`
+  max-width: ${({ theme }) => theme.sizes.max_width};
+  flex-direction: column;
+  margin: 0 auto;
 `;
 
 export const Title = styled.h2`
@@ -19,7 +22,7 @@ export const Title = styled.h2`
   line-height: 27px;
 
   @media screen and (max-width: ${({ theme }) => theme.sizes.mobile}) {
-    margin-left: 20px;
+    margin-left: 13px;
   }
 
   &::after {
